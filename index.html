@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/768px-Stack_Overflow_icon.svg.png" alt="logo" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/768px-Stack_Overflow_icon.svg.png"
+        alt="logo" />
     <h1 id="title" class="text-center">Stackoverflow Survey Form</h1>
     <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
@@ -19,7 +20,7 @@
             <label id="email-label" for="email">Email
                 <input id="email" type="email" class="form-control" placeholder="Enter your email" required />
             </label>
-            <label id="number-label" for="age">Age<span class="clue"> (optional)</span>
+            <label id="number-label" for="age">Age<span class="clue">(optional)</span>
                 <input id="age" type="number" class="form-control" placeholder="Enter your age" min="13" max="120" />
             </label>
             <label id="role-label" for="dropdown">Which option best describes your current role?
@@ -33,10 +34,37 @@
             </label>
         </fieldset>
         <fieldset>
-            <label>
-                How satisfied are you with Stackoverflow?
+            <label id="Questions">How satisfied are you with Stackoverflow?
+                <label for="satisfaction"><input type="radio" name="satisfaction" class="inline" checked /> Very</label>
+                <label for="satisfaction"><input type="radio" id="satisfaction" name="satisfaction" class="inline" />
+                    Not
+                    Really</label>
+                <label for="satisfaction"><input type="radio" id="satisfaction" name="satisfaction" class="inline" />
+                    Not Sure</label>
+            </label>
+            <label id="Questions">What is your favourite feature of Stackoverflow?
+                <select id="dropdown" name="feature" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="1">Good Questions</option>
+                    <option value="2">Reliable Answers</option>
+                    <option value="3">Finding Facts Faster</option>
+                    <option value="4">Community</option>
+                </select>
+            </label>
+            <label id="Questions">What would you like to see improved?<span class="clue">(Check all that apply)</span>
+                <label for="improvement"><input id="improvement" type="checkbox" class="inline" />Reputation
+                    System</label>
+                <label for="improvement"><input id="improvement" type="checkbox" class="inline" />Forum</label>
+                <label for="improvement"><input id="improvement" type="checkbox" class="inline" />Improved
+                    Feedback</label>
+                <label for="improvement"><input id="improvement" type="checkbox" class="inline" />Community</label>
+            </label>
+            <label id="Questions" for="comments">Any comments or suggestions?
+                <textarea id="comments" class="textarea" rows="5" cols="30"
+                    placeholder="Enter your comment here..."></textarea>
             </label>
         </fieldset>
+        <input type="submit" value="Submit" />
     </form>
 </body>
 
