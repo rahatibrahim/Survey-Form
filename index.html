@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/768px-Stack_Overflow_icon.svg.png" alt="logo" />
+    <h1 id="title" class="text-center">Stackoverflow Survey Form</h1>
+    <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name
+                <input id="name" type="text" class="form-control" placeholder="Enter your name" required />
+            </label>
+            <label id="email-label" for="email">Email
+                <input id="email" type="email" class="form-control" placeholder="Enter your email" required />
+            </label>
+            <label id="number-label" for="age">Age<span class="clue"> (optional)</span>
+                <input id="age" type="number" class="form-control" placeholder="Enter your age" min="13" max="120" />
+            </label>
+            <label id="role-label" for="dropdown">Which option best describes your current role?
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                How satisfied are you with Stackoverflow?
+            </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>
